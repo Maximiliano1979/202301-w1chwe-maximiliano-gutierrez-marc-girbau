@@ -17,5 +17,9 @@
     "husky": "^8.0.0",
     "parcel": "^2.8.2",
     "rimraf": "^4.0.4"
+  },
+  "dependencies": {
+    "@fontsource/playfair-display": "^4.5.12",
+    "@fontsource/rubik": "^4.5.13"
   }
 }
