@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "rimraf dist/",
     "prebuild:dev": "rimraf dist/",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --no-source-maps",
     "build:dev": "parcel src/index.html",
     "prepare": "husky install"
   },
@@ -23,4 +23,3 @@
     "@fontsource/rubik": "^4.5.13"
   }
 }
-
