@@ -3,8 +3,8 @@
 @use "components/hero-section/section";
 @use "components/hero-section/title";
 @use "components/hero-section/form";
-@use "components/hero-section/header.scss";
-@use "components/destinations-section/destionations-title.scss";
+@use "components/hero-section/header";
+@use "components/destinations-section/destionations-title";
 
 main {
   padding: 0 variables.$horizontal-padding;
