@@ -1,7 +1,17 @@
+@use "../../variables/variables" as *;
+
 .hero-section {
   &__header {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__title h1 {
+    font-family: $primary-font;
+  }
+
+  &__title p {
+    font-family: $secondary-font;
   }
 }
 
