@@ -4,3 +4,42 @@
 @use "components/hero-section/title";
 @use "components/hero-section/form";
 @use "components/hero-section/header.scss";
+@use "components/destinations-section/destionations-title.scss";
+
+main {
+  padding: variables.$horizontal-padding;
+  font-weight: variables.$primary-font-weight;
+  font-weight: variables.$primary-font-weight;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: variables.$higher-gap;
+}
+
+.titles {
+  &__main-title {
+    font-family: variables.$primary-font;
+    color: variables.$primary-font-color;
+    font-size: variables.$font-size-titles;
+    font-weight: inherit;
+  }
+  &__subtitle {
+    font-family: variables.$secondary-font;
+    color: variables.$secondary-font-color;
+    font-size: variables.$font-size-primary;
+    font-weight: inherit;
+  }
+}
+
+.image-container {
+  width: 100%;
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: variables.$secondary-border-radius;
+    height: variables.$primary-image-heigth;
+  }
+}
