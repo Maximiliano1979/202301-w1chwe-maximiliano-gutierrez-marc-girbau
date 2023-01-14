@@ -7,7 +7,7 @@
 @use "components/destinations-section/destionations-title.scss";
 
 main {
-  padding: variables.$horizontal-padding;
+  padding: 0 variables.$horizontal-padding;
   font-weight: variables.$primary-font-weight;
   font-weight: variables.$primary-font-weight;
 }
@@ -16,14 +16,28 @@ main {
   display: flex;
   flex-direction: column;
   gap: variables.$higher-gap;
+  margin: variables.$vertical-margin-sections 0;
 }
 
 .titles {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+
   &__main-title {
     font-family: variables.$primary-font;
     color: variables.$primary-font-color;
     font-size: variables.$font-size-titles;
     font-weight: inherit;
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: variables.$primary-color;
+      height: 2px;
+      width: 80%;
+      margin-top: 1rem;
+    }
   }
   &__subtitle {
     font-family: variables.$secondary-font;
@@ -35,6 +49,9 @@ main {
 
 .image-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
   &__image {
     width: 100%;
@@ -42,4 +59,34 @@ main {
     border-radius: variables.$secondary-border-radius;
     height: variables.$primary-image-heigth;
   }
+
+  &__text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 18.5px;
+    bottom: 40px;
+    left: 20px;
+  }
+
+  &__title {
+    font-family: variables.$primary-font;
+    color: variables.$light-font-color;
+    font-size: variables.$font-size-places;
+    font-weight: variables.$secondary-font-weight;
+  }
+
+  &__place {
+    font-family: variables.$secondary-font;
+    font-weight: variables.$primary-font-weight;
+    font-size: variables.$font-size-primary;
+    color: variables.$light-font-color;
+  }
+}
+
+.swipe {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }

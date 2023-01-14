@@ -1,5 +1,6 @@
 @import url(/node_modules/@fontsource/playfair-display/400.css);
 @import url(/node_modules/@fontsource/rubik/400.css);
+@import url(/node_modules/@fontsource/playfair-display/500.css);
 
 $primary-color: #ff7757;
 $primary-color-light: #ffd2c7;
@@ -7,15 +8,20 @@ $primary-color-light: #ffd2c7;
 $secondary-color: #331811;
 $secondary-color-light: #61291c;
 
+$dark-color: #172432;
+
 $primary-font: "Playfair Display";
 $secondary-font: "Rubik";
 
 $font-size-titles: 2.5rem;
 $font-size-primary: 1.125rem;
+$font-size-places: 1.5rem;
 
 $primary-font-weight: 400;
+$secondary-font-weight: 500;
 
 $horizontal-padding: 16px;
+$vertical-margin-sections: 80px;
 
 $primary-font-color: #172432;
 $secondary-font-color: #767e86;
@@ -23,6 +29,7 @@ $light-font-color: #fff;
 
 $main-border-radius: 26px;
 $secondary-border-radius: 16px;
+$border-radius-buttons: 12px;
 
 $primary-image-heigth: 320px;
 
