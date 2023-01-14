@@ -1,17 +1,11 @@
 @use "../../variables/variables" as *;
 
 .hero-section {
+  background-image: url(/src/img/main-photo.webp);
+
   &__header {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__title h1 {
-    font-family: $primary-font;
-  }
-
-  &__title p {
-    font-family: $secondary-font;
   }
 }
 

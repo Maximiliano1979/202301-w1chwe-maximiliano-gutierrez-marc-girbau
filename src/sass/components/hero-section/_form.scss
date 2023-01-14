@@ -1,0 +1,16 @@
+@use "../../variables/variables" as *;
+
+.form {
+  background-color: #fff;
+  margin: 0 16px;
+  border-radius: 10px;
+  color: $secondary-font-color;
+  &__link {
+    width: 100%;
+    height: 128px;
+    display: inline-block;
+    background-color: $primary-color;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
