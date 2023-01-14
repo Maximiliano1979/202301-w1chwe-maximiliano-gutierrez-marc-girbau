@@ -1,0 +1,12 @@
+.hero-section {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header {
+  &__navbar {
+    display: none;
+  }
+}
