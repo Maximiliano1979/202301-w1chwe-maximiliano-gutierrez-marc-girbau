@@ -1,5 +1,9 @@
 @use "reset/reset";
 @use "variables/variables";
+@use "components/hero-section/section";
+@use "components/hero-section/title";
+@use "components/hero-section/form";
+@use "components/hero-section/header.scss";
 @use "components/destinations-section/destionations-title.scss";
 
 main {
