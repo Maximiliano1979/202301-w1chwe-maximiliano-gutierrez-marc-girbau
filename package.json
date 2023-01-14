@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "prebuild": "rimraf dist/",
-    "prebuild:dev": "rimraf dist/",
-    "build": "parcel build src/index.html",
-    "build:dev": "parcel src/index.html",
+    "prebuild": "rimraf dist",
+    "prebuild:dev": "rimraf dist",
+    "build": "parcel build src/index.html/",
+    "build:dev": "parcel src/index.html/",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -23,4 +23,3 @@
     "@fontsource/rubik": "^4.5.13"
   }
 }
-
