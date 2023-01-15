@@ -7,6 +7,7 @@
 @use "components/destinations-section/destionations-title";
 @use "components/special/offer";
 @use "components/blog/blog";
+@use "components/footer/footer";
 
 main {
   padding: 0 variables.$horizontal-padding;
@@ -230,5 +231,11 @@ main {
     &__info {
       font-size: variables.$font-size-places;
     }
+  }
+
+  footer {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
   }
 }
