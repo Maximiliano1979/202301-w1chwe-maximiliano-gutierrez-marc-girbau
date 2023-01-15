@@ -5,10 +5,8 @@
   gap: 20px;
 }
 
-@media only screen and (min-width: 500px) {
-  .destinations {
-    &__images {
-      display: flex;
-    }
-  }
+.destinations__images {
+  height: 320px;
+  display: flex;
+  justify-content: center;
 }
