@@ -3,16 +3,13 @@
 .hero-section {
   background-image: url(/src/img/bannermontaña.webp);
   background-size: cover;
-  /* background-position: bottom; */
-  /* &__header {
-    display: flex;
-    justify-content: space-between;
-  } */
 }
 
 .company-icon {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 39px;
   &__name {
     width: 7rem;
@@ -20,6 +17,16 @@
   &__icon {
     width: 24.3px;
     height: 27.3;
+  }
+  &__hamburguer {
+    position: absolute;
+    right: 18px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 16px;
   }
 }
 
