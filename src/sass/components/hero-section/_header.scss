@@ -33,5 +33,36 @@
 .header {
   &__navbar {
     display: none;
+    color: $light-font-color;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .navbar {
+    position: absolute;
+    right: 16px;
+    top: 43px;
+    display: contents;
+    display: flex;
+    gap: 150px;
+    justify-content: flex-end;
+    a {
+      font-family: $secondary-font;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23.7px;
+    }
+    &__login {
+      display: flex;
+      gap: 36px;
+      margin-right: 32px;
+    }
+  }
+  .menu_links {
+    display: flex;
+    gap: 32px;
+  }
+  .company-icon__hamburguer {
+    display: none;
   }
 }
