@@ -1,8 +1,9 @@
 @use "../../variables/variables" as *;
 
 .hero-section {
-  background-image: url(/src/img/banner.webp);
-
+  background-image: url(/src/img/bannermontaña.webp);
+  background-size: cover;
+  /* background-position: bottom; */
   /* &__header {
     display: flex;
     justify-content: space-between;
