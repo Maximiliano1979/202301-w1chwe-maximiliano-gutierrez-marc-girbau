@@ -13,10 +13,12 @@
 <body>
   <section class="hero-section">
     <header class="hero-section__header header">
-      <div>
-        <img src="/src/img/favicon.png" alt="Favicon Travellian">
-        <img src="/src/img/Travellian.png" alt="Travellian Site">
-        <img src="/src/img/Vector.png" alt="Menu desplegable">
+      <div class="header__company-icon company-icon">
+        <div>
+          <img src="/src/img/iconocompany.svg" alt="Favicon Travellian" class="company-icon__icon">
+          <img src="/src/img/Travellian.svg" alt="Travellian Site" class="company-icon__name">
+        </div>
+        <img src="/src/img/menuhamburguer.svg" alt="Menu desplegable" class="company-icon__hamburguer">
       </div>
       <div class="header__navbar navbar">
         <div class="navbar__menu">
@@ -41,23 +43,23 @@
     <form action="" class="hero-section__form form">
       <ul class="form__entries entries">
         <li class="entries__inputs">
-          <label for="destination" class="inputs__destination">Destination</label>
-          <input type="text" id="destination" name="" value="Dubai" class="inputs__place">
+          <label for="destination">Destination</label>
+          <input type="text" id="destination" name="" value="Dubai">
         </li>
         <li class="entries__inputs">
           <label for="person">Person</label>
           <input type="text" id="person" name="user_name" value="2">
         </li>
-        <li class="entries-inputs">
+        <li class="entries__inputs">
           <label for="check-in">Check in</label>
           <input type="text" id="check-in" name="check" value="sun, 17th Sep 2020">
         </li>
-        <li class="entries-inputs">
+        <li class="entries__inputs">
           <label for="check-out">Check Out</label>
           <input type="text" id="check-in" name="check" value="sun, 17th Sep 2020">
         </li>
       </ul>
-      <a href="" class="form__link">Book Now</a>
+      <a href="" class="form__link">Book Now<img src="/src/img/white arrow.png" alt="arrow to right"></a>
     </form>
   </section>
 

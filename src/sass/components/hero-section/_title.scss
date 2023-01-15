@@ -1,10 +1,16 @@
 @use "../../variables/variables" as *;
 
 .hero-section {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
   &__title h1 {
     font-family: $primary-font;
     color: $light-font-color;
-    margin-bottom: 100px;
+    font-size: $font-size-titles;
+    font-weight: $primary-font-weight;
   }
 
   &__title p {

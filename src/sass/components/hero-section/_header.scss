@@ -3,9 +3,22 @@
 .hero-section {
   background-image: url(/src/img/main-photo.webp);
 
-  &__header {
+  /* &__header {
     display: flex;
     justify-content: space-between;
+  } */
+}
+
+.company-icon {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 39px;
+  &__name {
+    width: 7rem;
+  }
+  &__icon {
+    width: 24.3px;
+    height: 27.3;
   }
 }
 

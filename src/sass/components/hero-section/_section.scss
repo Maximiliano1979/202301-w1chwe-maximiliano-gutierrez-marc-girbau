@@ -1,1 +1,8 @@
+@use "../../variables/variables" as *;
 
+.hero-section {
+  padding: 0 $horizontal-padding;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
