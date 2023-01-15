@@ -1,6 +1,7 @@
 @import url(/node_modules/@fontsource/playfair-display/400.css);
 @import url(/node_modules/@fontsource/rubik/400.css);
 @import url(/node_modules/@fontsource/playfair-display/500.css);
+@import url(/node_modules/@fontsource/mulish/400.css);
 
 $primary-color: #ff7757;
 $primary-color-light: #ffd2c7;
@@ -12,15 +13,18 @@ $dark-color: #172432;
 
 $primary-font: "Playfair Display";
 $secondary-font: "Rubik";
+$rare-font: "Mulish";
 
 $font-size-titles: 2.5rem;
 $font-size-primary: 1.125rem;
 $font-size-places: 1.5rem;
+$font-size-Mulish-font: 1.75rem;
 
 $primary-font-weight: 400;
 $secondary-font-weight: 500;
 
 $horizontal-padding: 16px;
+$details-padding: 20px;
 $vertical-margin-sections: 80px;
 
 $primary-font-color: #172432;
@@ -33,4 +37,5 @@ $border-radius-buttons: 12px;
 
 $primary-image-heigth: 320px;
 
-$higher-gap: 100px;
+$higher-section-gap: 100px;
+$lower-section-gap: 60px;
