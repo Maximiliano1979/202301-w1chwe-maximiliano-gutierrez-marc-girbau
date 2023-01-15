@@ -3,6 +3,7 @@
 .offer {
   background-color: #fff8f1;
   border-radius: variables.$main-border-radius;
+  max-width: 438px;
 }
 
 .info {
@@ -69,4 +70,11 @@
     width: 20px;
     height: 19px;
   }
+}
+
+.offers-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  overflow: hidden;
 }

@@ -183,4 +183,32 @@ main {
       font-size: variables.$font-size-places;
     }
   }
+
+  .info__text {
+    font-weight: variables.$font-size-primary;
+  }
+
+  .price {
+    &__from {
+      font-size: 1.25rem;
+    }
+
+    &__number {
+      font-size: variables.$font-size-titles;
+    }
+  }
+
+  .info__details {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-blog {
+    flex-direction: row;
+  }
+
+  .offers-list {
+    justify-content: flex-start;
+    overflow: hidden;
+  }
 }
