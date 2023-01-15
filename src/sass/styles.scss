@@ -6,6 +6,7 @@
 @use "components/hero-section/header";
 @use "components/destinations-section/destionations-title";
 @use "components/special/offer";
+@use "components/blog/blog";
 
 main {
   padding: 0 variables.$horizontal-padding;
@@ -25,6 +26,10 @@ main {
 
   &--special {
     gap: variables.$lower-section-gap;
+  }
+
+  &--blog {
+    gap: variables.$higher-section-gap;
   }
 }
 
@@ -106,6 +111,11 @@ main {
     border-top-left-radius: variables.$main-border-radius;
     border-top-right-radius: variables.$main-border-radius;
     height: 286px;
+  }
+
+  &--blog {
+    border-radius: variables.$main-border-radius;
+    height: 314px;
   }
 }
 
