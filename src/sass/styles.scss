@@ -232,4 +232,10 @@ main {
       font-size: variables.$font-size-places;
     }
   }
+
+  footer {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
 }
