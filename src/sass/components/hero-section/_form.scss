@@ -7,6 +7,8 @@
   color: $secondary-font-color;
 
   &__link {
+    font-family: $primary-font;
+    font-weight: 400px;
     width: 100%;
     height: 128px;
     display: inline-block;
@@ -20,13 +22,14 @@
     img {
       position: absolute;
       padding-right: 20px;
-      top: 52px;
-      right: 20px;
+      top: 57px;
+      right: -1px;
     }
   }
 }
 
 .entries {
+  padding-bottom: 60px;
   &__inputs {
     display: flex;
     flex-direction: column;
@@ -37,9 +40,12 @@
       font-family: $primary-font;
       border-style: none;
       border-bottom: 1px solid black;
+      padding-bottom: 13px;
     }
     label {
       font-family: $secondary-font;
+      text-transform: uppercase;
+      font-size: 14px;
     }
   }
 }
