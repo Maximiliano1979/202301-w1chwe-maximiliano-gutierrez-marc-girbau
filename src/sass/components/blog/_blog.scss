@@ -1,0 +1,41 @@
+@use "../../variables/variables";
+
+.main-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.blog-text {
+  &__title {
+    font-family: variables.$primary-font;
+    color: variables.$primary-font-color;
+    font-size: variables.$font-size-titles;
+    font-weight: inherit;
+  }
+  &__info {
+    font-family: variables.$secondary-font;
+    color: variables.$primary-font-color;
+    font-size: variables.$font-size-primary;
+    line-height: 42px;
+  }
+}
+
+.read-more {
+  display: flex;
+  gap: variables.$details-padding;
+
+  align-items: center;
+
+  &__text {
+    font-family: variables.$secondary-font;
+    color: variables.$primary-color;
+    font-size: 1.5rem;
+  }
+}

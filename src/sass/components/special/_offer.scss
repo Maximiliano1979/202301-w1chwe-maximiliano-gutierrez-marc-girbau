@@ -1,0 +1,72 @@
+@use "../../variables/variables";
+
+.offer {
+  background-color: #fff8f1;
+  border-radius: variables.$main-border-radius;
+}
+
+.info {
+  padding: variables.$details-padding;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+    font-family: variables.$rare-font;
+    font-weight: variables.$primary-font-weight;
+    font-size: variables.$font-size-Mulish-font;
+    color: variables.$secondary-font-color;
+  }
+
+  &__text {
+    font-family: variables.$secondary-font;
+    font-weight: variables.$primary-font-weight;
+    color: variables.$primary-font-color;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: variables.$details-padding;
+  }
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__from {
+    font-family: variables.$secondary-font;
+    font-size: variables.$font-size-primary;
+    color: variables.$secondary-font-color;
+  }
+
+  &__number {
+    font-family: variables.$secondary-font;
+    color: variables.$primary-color;
+    font-size: 2rem;
+  }
+
+  &__button {
+    background-color: variables.$primary-color;
+    padding: 16px 24px;
+    text-transform: uppercase;
+  }
+}
+
+.stars {
+  display: flex;
+  gap: 8px;
+
+  &__star {
+    width: 20px;
+    height: 19px;
+  }
+}

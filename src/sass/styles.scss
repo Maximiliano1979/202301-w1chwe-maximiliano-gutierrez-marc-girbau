@@ -5,6 +5,8 @@
 @use "components/hero-section/form";
 @use "components/hero-section/header";
 @use "components/destinations-section/destionations-title";
+@use "components/special/offer";
+@use "components/blog/blog";
 
 main {
   padding: 0 variables.$horizontal-padding;
@@ -15,8 +17,20 @@ main {
 .section {
   display: flex;
   flex-direction: column;
-  gap: variables.$higher-gap;
+
   margin: variables.$vertical-margin-sections 0;
+
+  &--destinations {
+    gap: variables.$higher-section-gap;
+  }
+
+  &--special {
+    gap: variables.$lower-section-gap;
+  }
+
+  &--blog {
+    gap: variables.$higher-section-gap;
+  }
 }
 
 .titles {
@@ -54,8 +68,6 @@ main {
   position: relative;
 
   &__image {
-    width: 100%;
-    object-fit: cover;
     border-radius: variables.$secondary-border-radius;
     height: variables.$primary-image-heigth;
   }
@@ -89,4 +101,29 @@ main {
   display: flex;
   justify-content: center;
   gap: 40px;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+
+  &--special {
+    border-top-left-radius: variables.$main-border-radius;
+    border-top-right-radius: variables.$main-border-radius;
+    height: 286px;
+  }
+
+  &--blog {
+    border-radius: variables.$main-border-radius;
+    height: 314px;
+  }
+}
+
+.button {
+  font-family: variables.$secondary-font;
+  font-weight: variables.$primary-font-weight;
+  border-radius: variables.$border-radius-buttons;
+  width: fit-content;
+  color: variables.$light-font-color;
+  font-size: variables.$font-size-primary;
 }
