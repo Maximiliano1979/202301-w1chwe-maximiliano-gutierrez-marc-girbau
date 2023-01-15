@@ -106,6 +106,7 @@ main {
 .image {
   width: 100%;
   object-fit: cover;
+  max-width: 450px;
 
   &--special {
     border-top-left-radius: variables.$main-border-radius;
@@ -126,4 +127,14 @@ main {
   width: fit-content;
   color: variables.$light-font-color;
   font-size: variables.$font-size-primary;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 500px) {
+  .hidden {
+    display: inline-block;
+  }
 }
