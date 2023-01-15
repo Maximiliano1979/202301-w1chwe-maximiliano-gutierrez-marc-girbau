@@ -5,12 +5,41 @@
   margin: 0 16px;
   border-radius: 10px;
   color: $secondary-font-color;
+
   &__link {
     width: 100%;
     height: 128px;
     display: inline-block;
+    position: relative;
     background-color: $primary-color;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    color: $light-font-color;
+    font-size: 2.25rem;
+    padding: 40px 53px 40px 20px;
+    img {
+      position: absolute;
+      padding-right: 20px;
+      top: 52px;
+      right: 20px;
+    }
+  }
+}
+
+.entries {
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: $details-padding;
+    input {
+      font-family: $primary-font;
+      border-style: none;
+      border-bottom: 1px solid black;
+    }
+    label {
+      font-family: $secondary-font;
+    }
   }
 }
