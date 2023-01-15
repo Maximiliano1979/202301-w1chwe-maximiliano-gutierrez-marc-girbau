@@ -115,7 +115,7 @@ main {
 
   &--blog {
     border-radius: variables.$main-border-radius;
-    height: 314px;
+    height: 100%;
   }
 }
 
@@ -133,6 +133,9 @@ main {
 }
 
 @media only screen and (min-width: 950px) {
+  main {
+    padding: 0 variables.$horizontal-padding-desktop;
+  }
   .hidden {
     display: inline-block;
   }
@@ -210,5 +213,22 @@ main {
   .offers-list {
     justify-content: flex-start;
     overflow: hidden;
+  }
+
+  .image {
+    &--blog {
+      max-width: 670px;
+      max-height: 800px;
+    }
+  }
+
+  .blog-text {
+    &__title {
+      font-size: variables.$font-size-titles;
+    }
+
+    &__info {
+      font-size: variables.$font-size-places;
+    }
   }
 }
